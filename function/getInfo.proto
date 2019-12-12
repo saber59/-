@@ -1,0 +1,17 @@
+syntax="proto3";
+
+package getInfo ;
+
+service getInfo{
+    rpc Info (Rec) returns (Send){}
+}
+
+message Rec{
+    string R =1;
+}
+
+message Send{
+    string StuName =1;
+    string DormNo =2;
+    string  BuildNum=3;
+}
